@@ -1,0 +1,49 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="192" height="192" fill="#1a1a2e" rx="24"/>
+
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16213e"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="192" height="192" fill="url(#bg)" rx="24"/>
+
+  <!-- Blocks -->
+  <rect x="20" y="30" width="30" height="15" fill="#ff6b6b" rx="2" filter="url(#glow)"/>
+  <rect x="55" y="30" width="30" height="15" fill="#feca57" rx="2" filter="url(#glow)"/>
+  <rect x="90" y="30" width="30" height="15" fill="#48cae4" rx="2" filter="url(#glow)"/>
+  <rect x="125" y="30" width="30" height="15" fill="#06ffa5" rx="2" filter="url(#glow)"/>
+
+  <rect x="20" y="50" width="30" height="15" fill="#ff9ff3" rx="2" filter="url(#glow)"/>
+  <rect x="55" y="50" width="30" height="15" fill="#f38ba8" rx="2" filter="url(#glow)"/>
+  <rect x="90" y="50" width="30" height="15" fill="#a6e3a1" rx="2" filter="url(#glow)"/>
+  <rect x="125" y="50" width="30" height="15" fill="#fab387" rx="2" filter="url(#glow)"/>
+
+  <rect x="20" y="70" width="30" height="15" fill="#ff6b6b" rx="2" filter="url(#glow)"/>
+  <rect x="55" y="70" width="30" height="15" fill="#feca57" rx="2" filter="url(#glow)"/>
+  <rect x="90" y="70" width="30" height="15" fill="#48cae4" rx="2" filter="url(#glow)"/>
+  <rect x="125" y="70" width="30" height="15" fill="#06ffa5" rx="2" filter="url(#glow)"/>
+
+  <!-- Ball -->
+  <circle cx="96" cy="120" r="12" fill="#ff6b6b" filter="url(#glow)"/>
+
+  <!-- Paddle -->
+  <rect x="66" y="150" width="60" height="10" fill="#4ecdc4" rx="5" filter="url(#glow)"/>
+
+  <!-- Game title -->
+  <text x="96" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ffffff">B&amp;B</text>
+</svg>
